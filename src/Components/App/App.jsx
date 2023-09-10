@@ -13,8 +13,7 @@ import { store } from '../Redux/store';
 import Cart from '../Cart/Cart';
 import User from '../User/User';
 import Contact from '../Contact/Contact';
-function App() {
-  const router = createBrowserRouter(
+const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element = {<Layout />}>
         <Route index element = {<Home />} />
@@ -27,6 +26,8 @@ function App() {
       </Route>
     )
   )
+function App() {
+  
   // const router = createBrowserRouter([
 
   //   {path:"/",element: <Layout />,
@@ -47,7 +48,6 @@ function App() {
   return (
     <>
       <RouterProvider router={router} />
-
     </>
 
   );
