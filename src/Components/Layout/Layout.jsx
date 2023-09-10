@@ -8,6 +8,7 @@ export default function Layout() {
       <h2>
         Hello World 3
     </h2>
+    <Outlet />
     </>
   )
 }
