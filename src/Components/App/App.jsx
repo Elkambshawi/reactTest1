@@ -1,4 +1,7 @@
-import { createBrowserRouter , RouterProvider } from 'react-router-dom';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 import Navbar from '../Navbar/Navbar';
 import './App.css';
 import Layout from '../Layout/Layout';
@@ -13,17 +16,17 @@ import User from '../User/User';
 import Contact from '../Contact/Contact';
 function App() {
 
-  let routes = createBrowserRouter([
-
-    {path:"/",element: <Layout />,
-      
-
-      },
-  ])
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Layout />,
+      loader: rootLoader,
+    },
+  ]);
 
   return (
     <>
-      <RouterProvider  router={routes}/>
+      <RouterProvider router={router} />
 
     </>
 
