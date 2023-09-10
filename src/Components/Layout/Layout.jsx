@@ -5,8 +5,9 @@ import Navbar from '../Navbar/Navbar'
 export default function Layout() {
   return (
     <>
-      <Navbar/>
-      <Outlet/>
+      <h2>
+        Hello World 2
+    </h2>
     </>
   )
 }

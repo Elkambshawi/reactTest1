@@ -15,7 +15,10 @@ function App() {
 
   let routes = createBrowserRouter([
 
-    {path:"/",element: <Layout />,}
+    {path:"/",element: <Layout />,
+      
+
+      },
   ])
 
   return (<>
