@@ -1,5 +1,5 @@
 import {
-  createBrowserRouter, RouterProvider, createRoutesFromElements, Route, HashRouter,
+  createBrowserRouter, RouterProvider, createRoutesFromElements, Route, HashRouter, createHashRouter,
 } from "react-router-dom";
 import Navbar from '../Navbar/Navbar';
 import './App.css';
@@ -14,9 +14,9 @@ import Cart from '../Cart/Cart';
 import User from '../User/User';
 import Contact from '../Contact/Contact';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
 
-  {path:"/",element: <Layout />,
+  {path:"/*",element: <Layout />,
     children: [
       {index:true,element:<Home/>},
       {path:"shop",element:<Shop/> },
@@ -36,8 +36,7 @@ function App() {
   return (
     <>
       <Provider store={store}>
-        <RouterProvider router={router}>
-        </RouterProvider>
+        <RouterProvider router={router} />
       </Provider>
     </>
 
