@@ -13,10 +13,18 @@ import User from '../User/User';
 import Contact from '../Contact/Contact';
 function App() {
 
+  let routes = createBrowserRouter([
+
+    {path:"/",element: <Layout />,}
+  ])
 
   return (<>
 
-    <h1>Hello world</h1>
+  <Provider store={store}>
+
+        <RouterProvider  router={routes}/>
+  
+  </Provider>
   
   </>
 
