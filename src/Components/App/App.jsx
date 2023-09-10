@@ -23,7 +23,11 @@ function App() {
 
   return (<>
 
-  <h1>Hello Esraa</h1>
+  <Provider store={store}>
+
+        <h2>Hello Esraa 2</h2>
+  
+  </Provider>
   
   </>
 
