@@ -1,5 +1,5 @@
 import {
-  createBrowserRouter, RouterProvider, createRoutesFromElements, Route,
+  createBrowserRouter, RouterProvider, createRoutesFromElements, Route, HashRouter,
 } from "react-router-dom";
 import Navbar from '../Navbar/Navbar';
 import './App.css';
@@ -36,7 +36,8 @@ function App() {
   return (
     <>
       <Provider store={store}>
-        <RouterProvider router={router} />
+        <RouterProvider router={router}>
+        </RouterProvider>
       </Provider>
     </>
 

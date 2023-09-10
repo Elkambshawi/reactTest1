@@ -8,14 +8,17 @@ import reportWebVitals from './reportWebVitals';
 import './index.css';
 import { Provider } from 'react-redux';
 import { store } from './Components/Redux/store';
+import {
+  createBrowserRouter, RouterProvider, createRoutesFromElements, Route, HashRouter, Router
+} from "react-router-dom";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <RouterProvider>
+  
       <App />
-    </RouterProvider>
+
   </React.StrictMode>
 );
 
