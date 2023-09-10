@@ -23,11 +23,7 @@ function App() {
 
   return (<>
 
-  <Provider store={store}>
-
-        <RouterProvider  router={routes}/>
-  
-  </Provider>
+  <h1>Hello Esraa</h1>
   
   </>
 
