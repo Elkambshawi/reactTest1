@@ -17,11 +17,21 @@ import Contact from '../Contact/Contact';
 function App() {
 
   const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <Layout />,
-    },
-  ]);
+
+    {path:"/",element: <Layout />,
+      children: [
+        {index:true,element:<Home/>},
+        {path:"shop",element:<Shop/> },
+        {path:"about",element:<About/> },
+        {path:"contact",element:<Contact/> },
+        {path:"details/:id", element: <Details /> },
+        {path:"cart", element: <Cart/> },
+        {path:"user", element: <User/> },
+
+        ]
+
+      },
+  ])
 
   return (
     <>
