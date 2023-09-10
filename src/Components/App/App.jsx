@@ -14,24 +14,24 @@ import Cart from '../Cart/Cart';
 import User from '../User/User';
 import Contact from '../Contact/Contact';
 
-const router = createHashRouter([
 
-  {path:"/",element: <Layout />,
-    children: [
-      {index:true,element:<Home/>},
-      {path:"shop",element:<Shop/> },
-      {path:"about",element:<About/> },
-      {path:"contact",element:<Contact/> },
-      {path:"details/:id", element: <Details /> },
-      {path:"cart", element: <Cart/> },
-      {path:"user", element: <User/> },
-
-      ]
-
-    },
-])
 function App() {
+  const router = createHashRouter([
+
+    {path:"/",element: <Layout />,
+      children: [
+        {index:true,element:<Home/>},
+        {path:"shop",element:<Shop/> },
+        {path:"about",element:<About/> },
+        {path:"contact",element:<Contact/> },
+        {path:"details/:id", element: <Details /> },
+        {path:"cart", element: <Cart/> },
+        {path:"user", element: <User/> },
   
+        ]
+  
+      },
+  ])
 
   return (
     <>
