@@ -21,9 +21,11 @@ function App() {
       },
   ])
 
-  return (<>
-    <Layout />
-  </>
+  return (
+    <>
+      <RouterProvider  router={routes}/>
+
+    </>
 
   );
 }
