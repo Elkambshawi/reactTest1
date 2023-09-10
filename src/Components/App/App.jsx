@@ -16,7 +16,7 @@ import Contact from '../Contact/Contact';
 
 const router = createHashRouter([
 
-  {path:"/*",element: <Layout />,
+  {path:"/",element: <Layout />,
     children: [
       {index:true,element:<Home/>},
       {path:"shop",element:<Shop/> },
